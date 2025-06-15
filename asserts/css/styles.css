@@ -1,0 +1,136 @@
+  * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #051821;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 500px;
+      height: 50vh;
+      background: #1A4645;
+      border-radius: 16px;
+      padding: 25px;
+      overflow-y: auto;
+      box-shadow:
+        0 4px 8px rgba(0, 0, 0, 0.3),
+        0 0 15px rgba(245, 136, 0, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #FBBC24;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .input-group input {
+      flex: 1 1 70%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background: #266867;
+      color: #fff;
+      min-width: 0;
+    }
+
+    .input-group button {
+      flex: 1 1 25%;
+      padding: 10px;
+      background: #F58800;
+      border: none;
+      color: #fff;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .input-group button:hover {
+      background: #FBBC24;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      background: #266867;
+      padding: 12px 16px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      transition: transform 0.2s;
+    }
+
+    li:hover {
+      transform: scale(1.01);
+    }
+
+    li input[type="text"] {
+      background: #1A4645;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 6px;
+      flex: 1;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .actions button {
+      background: transparent;
+      border: none;
+      color: #FBBC24;
+      cursor: pointer;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .actions button:hover {
+      color: #fff;
+    }
+
+    @media (max-width: 480px) {
+      .input-group {
+        flex-direction: column;
+      }
+
+      .input-group button {
+        width: 100%;
+      }
+
+      li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .actions {
+        align-self: flex-end;
+      }
+    }
